@@ -1,25 +1,29 @@
-﻿<Properties StartupConfiguration="{C730B942-FCC8-4631-A183-56AE936C73ED}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="PriceTag/Views/Home/Index.cshtml">
+﻿<Properties StartupConfiguration="{C730B942-FCC8-4631-A183-56AE936C73ED}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PriceTag/Controllers/MyController.cs">
     <Files>
-      <File FileName="PriceTag/Controllers/HomeController.cs" Line="16" Column="60" />
-      <File FileName="PriceTag/Views/Home/Index.cshtml" Line="11" Column="27" />
-      <File FileName="PriceTag/Controllers/MyController.cs" Line="58" Column="16" />
+      <File FileName="PriceTag/Controllers/HomeController.cs" Line="36" Column="68" />
+      <File FileName="PriceTag/Views/Shared/_Layout.cshtml" Line="14" Column="1" />
+      <File FileName="PriceTag/Controllers/MyController.cs" Line="21" Column="5" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="PriceTag" expanded="True">
             <Node name="PriceTag" expanded="True">
-              <Node name="Controllers" expanded="True" />
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True">
+                <Node name="MyController.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Home" expanded="True">
-                  <Node name="Index.cshtml" selected="True" />
-                </Node>
+                <Node name="Home" expanded="True" />
                 <Node name="Shared" expanded="True" />
               </Node>
               <Node name="wwwroot" expanded="True">
-                <Node name="images" expanded="True" />
+                <Node name="lib" expanded="True">
+                  <Node name="bootstrap" expanded="True" />
+                </Node>
+                <Node name="reports" expanded="True" />
               </Node>
             </Node>
           </Node>

@@ -7,14 +7,23 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="bootstrap" Version="4.3.1" />
+    <PackageReference Include="FastReport.Web" Version="2019.3.0-demo" />
+    <PackageReference Include="FastReport.Core" Version="2019.3.0-demo" />
   </ItemGroup>
 
   <ItemGroup>
     <Content Remove="Views\Home\About.cshtml" />
-    <Content Remove="wwwroot\images\flash.jpg" />
+    <Content Remove="wwwroot\images\bank.jpg" />
+    <Content Remove="wwwroot\images\strainer.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="wwwroot\data\" />
     <Folder Include="wwwroot\images\" />
+    <Folder Include="wwwroot\reports\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="wwwroot\images\bank.jpg" />
+    <None Include="wwwroot\images\strainer.jpg" />
   </ItemGroup>
 </Project>

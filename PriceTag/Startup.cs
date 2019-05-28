@@ -48,6 +48,7 @@ namespace PriceTag
                 app.UseHsts();
             }
 
+            app.UseFastReport();
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="05/28/2019 18:11:11" ReportInfo.Modified="05/28/2019 18:28:52" ReportInfo.CreatorVersion="2019.1.15.0">
+  <Dictionary>
+    <XmlDataConnection Name="Connection" ConnectionString="rijcmlqmmfdjkQxfe1iwShBNGpud9skXtuacS7eWXAtRFr//zFHdT8Z/o/HovyXNccesnIGcWhzwCZeva9m7JLRK53GWANuo/DnfT50NIhoXOidrVc=">
+      <TableDataSource Name="Items" DataType="System.Int32" Enabled="true" TableName="Items">
+        <Column Name="ID" DataType="System.String"/>
+        <Column Name="Name" DataType="System.String"/>
+        <Column Name="Description" DataType="System.String"/>
+        <Column Name="FileName" DataType="System.String"/>
+        <Column Name="Price" DataType="System.String"/>
+      </TableDataSource>
+    </XmlDataConnection>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <DataBand Name="Data1" Width="718.2" Height="56.7" DataSource="Items">
+      <ShapeObject Name="Shape1" Left="151.2" Width="330.75" Height="56.7" Shape="RoundRectangle"/>
+      <TextObject Name="Text1" Left="170.1" Top="9.45" Width="94.5" Height="18.9" Text="[Items.ID]" Font="Arial, 10pt"/>
+      <TextObject Name="Text2" Left="170.1" Top="28.35" Width="94.5" Height="18.9" Text="[Items.Name]" Font="Arial, 10pt"/>
+    </DataBand>
+  </ReportPage>
+</Report>

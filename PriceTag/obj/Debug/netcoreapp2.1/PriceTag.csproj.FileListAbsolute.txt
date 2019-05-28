@@ -27,4 +27,4 @@
 /Users/admin/Projects/PriceTag/PriceTag/obj/Debug/netcoreapp2.1/PriceTag.dll
 /Users/admin/Projects/PriceTag/PriceTag/obj/Debug/netcoreapp2.1/PriceTag.pdb
 /Users/admin/Projects/PriceTag/PriceTag/obj/Debug/netcoreapp2.1/PriceTag.csproj.CopyComplete
-/Users/admin/Projects/PriceTag/PriceTag/obj/Debug/netcoreapp2.1/Razor/Views/Home/Report.g.cshtml.cs
+/Users/admin/Projects/PriceTag/PriceTag/obj/Debug/netcoreapp2.1/Razor/Views/Home/PrintTags.g.cshtml.cs

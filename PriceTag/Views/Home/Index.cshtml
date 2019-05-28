@@ -3,15 +3,21 @@
     ViewData["Title"] = "PriceTag";
 }
 
-<h4 class="pt-5">Items</h4>
+<h4 class="pt-5 pb-3">Items</h4>
 
-@foreach (DataRow dr in ViewBag.Items)
-{
-    <div class="card" style="width: 18rem;">
-        <img src=@dr["FileName"] class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">@dr["Name"]</h5>
-            <p class="card-text">@dr["Description"]</p>
+<div class="row">
+    @foreach (DataRow dr in ViewBag.Items)
+    {
+        <div class="card ml-3" style="width: 18rem;">
+            <img src="/images/@dr["FileName"]" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">@dr["Name"]</h5>
+                <p class="card-text">@dr["Description"]</p>
+            </div>
         </div>
-    </div>
-}
+    }
+</div>
+
+<div class="pt-5">
+    <a href="/Home/PrintTags" class="btn btn-primary">Print Tags</a>
+</div>

@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETCoreApp,Version=v2.1",
-    "signature": "e071b1a7c9d575b1b3d9ba6c9a1be1d9c6701ca2"
+    "signature": "fb9a799e020d2691548c31c0738abd6b84826cf7"
   },
   "compilationOptions": {
     "defines": [
@@ -24,9 +24,12 @@
     ".NETCoreApp,Version=v2.1": {
       "PriceTag/1.0.0": {
         "dependencies": {
+          "FastReport.Core": "2019.3.0-demo",
+          "FastReport.Web": "2019.3.0-demo",
           "Microsoft.AspNetCore.App": "2.1.1",
           "Microsoft.AspNetCore.Razor.Design": "2.1.2",
-          "Microsoft.NETCore.App": "2.1.0"
+          "Microsoft.NETCore.App": "2.1.0",
+          "bootstrap": "4.3.1"
         },
         "runtime": {
           "PriceTag.dll": {}
@@ -35,7 +38,76 @@
           "PriceTag.dll": {}
         }
       },
+      "bootstrap/4.3.1": {
+        "dependencies": {
+          "jQuery": "3.0.0",
+          "popper.js": "1.14.0"
+        }
+      },
+      "CoreCompat.System.Drawing.v2/5.2.0-preview1-r131": {
+        "dependencies": {
+          "System.Security.Permissions": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/CoreCompat.System.Drawing.dll": {
+            "assemblyVersion": "0.0.0.0",
+            "fileVersion": "0.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/CoreCompat.System.Drawing.dll": {}
+        }
+      },
+      "FastReport.Core/2019.3.0-demo": {
+        "dependencies": {
+          "CoreCompat.System.Drawing.v2": "5.2.0-preview1-r131",
+          "Microsoft.CodeAnalysis.CSharp": "2.8.0",
+          "Microsoft.CodeAnalysis.VisualBasic": "2.0.0",
+          "System.Security.Cryptography.Pkcs": "4.5.2",
+          "System.Text.Encoding.CodePages": "4.5.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FastReport.dll": {
+            "assemblyVersion": "2019.3.0.0",
+            "fileVersion": "2019.3.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/FastReport.dll": {}
+        }
+      },
+      "FastReport.Web/2019.3.0-demo": {
+        "dependencies": {
+          "FastReport.Core": "2019.3.0-demo",
+          "Microsoft.AspNetCore.Html.Abstractions": "2.1.1",
+          "Microsoft.AspNetCore.Mvc.Core": "2.1.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/FastReport.Web.dll": {
+            "assemblyVersion": "2019.3.0.0",
+            "fileVersion": "2019.3.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/FastReport.Web.dll": {}
+        }
+      },
+      "jQuery/3.0.0": {},
       "Microsoft.AspNetCore.Razor.Design/2.1.2": {},
+      "Microsoft.CodeAnalysis.VisualBasic/2.0.0": {
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "2.8.0"
+        },
+        "runtime": {
+          "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.0.61501"
+          }
+        },
+        "compile": {
+          "lib/netstandard1.3/Microsoft.CodeAnalysis.VisualBasic.dll": {}
+        }
+      },
       "Microsoft.NETCore.App/2.1.0": {
         "dependencies": {
           "Microsoft.NETCore.DotNetHostPolicy": "2.1.0",
@@ -205,6 +277,29 @@
       "NETStandard.Library/2.0.3": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0"
+        }
+      },
+      "popper.js/1.14.0": {},
+      "System.Security.Cryptography.Pkcs/4.5.2": {
+        "dependencies": {
+          "System.Security.Cryptography.Cng": "4.5.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll": {
+            "assemblyVersion": "4.0.3.2",
+            "fileVersion": "4.6.27129.4"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.0.3.2",
+            "fileVersion": "4.6.27129.4"
+          }
+        },
+        "compile": {
+          "ref/netcoreapp2.1/System.Security.Cryptography.Pkcs.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -2876,12 +2971,6 @@
         },
         "compileOnly": true
       },
-      "System.Security.Cryptography.Pkcs/4.5.0": {
-        "dependencies": {
-          "System.Security.Cryptography.Cng": "4.5.0"
-        },
-        "compileOnly": true
-      },
       "System.Security.Cryptography.Primitives/4.3.0": {
         "dependencies": {
           "System.Diagnostics.Debug": "4.3.0",
@@ -2926,7 +3015,7 @@
       },
       "System.Security.Cryptography.Xml/4.5.0": {
         "dependencies": {
-          "System.Security.Cryptography.Pkcs": "4.5.0",
+          "System.Security.Cryptography.Pkcs": "4.5.2",
           "System.Security.Permissions": "4.5.0"
         },
         "compile": {
@@ -2970,6 +3059,9 @@
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.1.0",
           "System.Runtime.CompilerServices.Unsafe": "4.5.1"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Text.Encoding.CodePages.dll": {}
         },
         "compileOnly": true
       },
@@ -3155,12 +3247,54 @@
       "serviceable": false,
       "sha512": ""
     },
+    "bootstrap/4.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-fdrOK8EtcB89pVDGfuIWkydpjJBI2FmnC3U0S0mIcogN7kOdC31Pp1xmAyVJhEVvD+BdWvL4+p0b5prKhkfVLg==",
+      "path": "bootstrap/4.3.1",
+      "hashPath": "bootstrap.4.3.1.nupkg.sha512"
+    },
+    "CoreCompat.System.Drawing.v2/5.2.0-preview1-r131": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-+WrScg+skrIiNLBwbl+BFdlSyzUqKOZtAUskW2xfI8vcKQdDJp+UoreUFC9uMSEgSiAR32e5l3fTtFDUKEpRaA==",
+      "path": "corecompat.system.drawing.v2/5.2.0-preview1-r131",
+      "hashPath": "corecompat.system.drawing.v2.5.2.0-preview1-r131.nupkg.sha512"
+    },
+    "FastReport.Core/2019.3.0-demo": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-AybFMHiS34wJNdBlp3Q6Go9yZWY+MkSX3KVZNiblhNEOvdV6ooqtJGNl7G/xSufq+mRM65qDGCxA0OCvv3Rlsg==",
+      "path": "fastreport.core/2019.3.0-demo",
+      "hashPath": "fastreport.core.2019.3.0-demo.nupkg.sha512"
+    },
+    "FastReport.Web/2019.3.0-demo": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-qaupSBDI58/V/NSFV3ge6I7v8lX2yXSg7p9uij3UVrcMerYFo7wFPmdTP3JYq1PMNDKP3SpMgMRv9698oFzX8A==",
+      "path": "fastreport.web/2019.3.0-demo",
+      "hashPath": "fastreport.web.2019.3.0-demo.nupkg.sha512"
+    },
+    "jQuery/3.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-FXANjZia/vux9/ObNiPwh2zNWuzcgHMKXia1OQrviuf0OKPBWB2TBIVAICgtObuzEW+XLyaBEoVuOUlMXy0kNA==",
+      "path": "jquery/3.0.0",
+      "hashPath": "jquery.3.0.0.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Razor.Design/2.1.2": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-BclSBrm1mZzG1mjYG3Fm60ObVFa+DTKUkE0pZrg1nq7vJ/4whuLLQ3vk4ZsPAUbLyz4XiEyYNIMO1K/1Au+OLQ==",
       "path": "microsoft.aspnetcore.razor.design/2.1.2",
       "hashPath": "microsoft.aspnetcore.razor.design.2.1.2.nupkg.sha512"
+    },
+    "Microsoft.CodeAnalysis.VisualBasic/2.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-prNRejC7R/AFetMLggNIL7Dtlt+8Wm2AlvOMyHEbYAAXvy30Q4u2VGdY3WpPK11oGtwvKR4OhBfAAI6XvZduRg==",
+      "path": "microsoft.codeanalysis.visualbasic/2.0.0",
+      "hashPath": "microsoft.codeanalysis.visualbasic.2.0.0.nupkg.sha512"
     },
     "Microsoft.NETCore.App/2.1.0": {
       "type": "package",
@@ -3210,6 +3344,20 @@
       "sha512": "sha512-st47PosZSHrjECdjeIzZQbzivYBJFv6P2nv4cj2ypdI204DO+vZ7l5raGMiX4eXMJ53RfOIg+/s4DHVZ54Nu2A==",
       "path": "netstandard.library/2.0.3",
       "hashPath": "netstandard.library.2.0.3.nupkg.sha512"
+    },
+    "popper.js/1.14.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oamtAIKoHa/s45chV0TozJhrwTRUBURUVjFl1wHw1MrCplFDxmK41CMrMDQx1Eq08n7oEzqSHEPPWCdA6Mhb1w==",
+      "path": "popper.js/1.14.0",
+      "hashPath": "popper.js.1.14.0.nupkg.sha512"
+    },
+    "System.Security.Cryptography.Pkcs/4.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-NW7HDZG9dfWoL1P8EVpCiJHvOam84p3+DaufsxUcKlaw/dwF9Reo0Vx9IKclBoWUH79UmTfhPIvJfwoVxHQIdw==",
+      "path": "system.security.cryptography.pkcs/4.5.2",
+      "hashPath": "system.security.cryptography.pkcs.4.5.2.nupkg.sha512"
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",
@@ -4918,13 +5066,6 @@
       "sha512": "sha512-h4CEgOgv5PKVF/HwaHzJRiVboL2THYCou97zpmhjghx5frc7fIvlkY1jL+lnIQyChrJDMNEXS6r7byGif8Cy4w==",
       "path": "system.security.cryptography.openssl/4.3.0",
       "hashPath": "system.security.cryptography.openssl.4.3.0.nupkg.sha512"
-    },
-    "System.Security.Cryptography.Pkcs/4.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-1vv2x8cok3NAolee/nb6X/6PnTx+OBKUM3kt1Rlgg04uQ+IMwjc88xFIfJdwbYcvjlOtzT7CHba1pqVAu9tj/w==",
-      "path": "system.security.cryptography.pkcs/4.5.0",
-      "hashPath": "system.security.cryptography.pkcs.4.5.0.nupkg.sha512"
     },
     "System.Security.Cryptography.Primitives/4.3.0": {
       "type": "package",
