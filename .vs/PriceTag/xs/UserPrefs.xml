@@ -1,4 +1,37 @@
 ﻿<Properties StartupConfiguration="{C730B942-FCC8-4631-A183-56AE936C73ED}|Default">
-  <MonoDevelop.Ide.ItemProperties.PriceTag FirstBuild="True" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="PriceTag/Views/Home/Index.cshtml">
+    <Files>
+      <File FileName="PriceTag/Controllers/HomeController.cs" Line="16" Column="60" />
+      <File FileName="PriceTag/Views/Home/Index.cshtml" Line="11" Column="27" />
+      <File FileName="PriceTag/Controllers/MyController.cs" Line="58" Column="16" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="PriceTag" expanded="True">
+            <Node name="PriceTag" expanded="True">
+              <Node name="Controllers" expanded="True" />
+              <Node name="Models" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Home" expanded="True">
+                  <Node name="Index.cshtml" selected="True" />
+                </Node>
+                <Node name="Shared" expanded="True" />
+              </Node>
+              <Node name="wwwroot" expanded="True">
+                <Node name="images" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.PriceTag PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>

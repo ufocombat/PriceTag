@@ -9,4 +9,12 @@
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="Views\Home\About.cshtml" />
+    <Content Remove="wwwroot\images\flash.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\data\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
 </Project>
