@@ -33,8 +33,12 @@ namespace PriceTag.Controllers
             WebReport webReport = new WebReport();
             webReport.Width = "100%";
 
-            webReport.Report.RegisterData(InitData(), "ItemsDataSet");
+            DataSet d = InitData();
+
             webReport.Report.Load(System.IO.Path.Combine(_env.WebRootPath + "/reports", "tags.frx"));
+            webReport.Report.RegisterData(d, "ItemsDataSet");
+            webReport.Report.GetDataSource("Items").Enabled = true;
+            (webReport.Report.FindObject("Data1") as DataBand).DataSource = webReport.Report.GetDataSource("Items");
             webReport.Report.Prepare();
 
             ViewBag.WebReport = webReport;

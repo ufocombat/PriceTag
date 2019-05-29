@@ -20,6 +20,7 @@ namespace PriceTag.Controllers
             data.DataSetName = "ItemsDataSet";
 
             DataTable dt = new DataTable("Items");
+
             dt.Columns.Add(new DataColumn("ID", typeof(String)));
             dt.Columns.Add(new DataColumn("Name", typeof(string)));
             dt.Columns.Add(new DataColumn("Price", typeof(float)));
